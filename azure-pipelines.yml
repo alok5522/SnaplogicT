@@ -21,7 +21,7 @@ steps:
                result=$(curl -X POST https://elastic.snaplogic.com/api/1/rest/public/project/checkout/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)' \
                   -u  alok.tiwari@infosys.com:Snapkapass@99 \
                   -H "content-type:application/json" \
-                  -d '{"repo":"$REPO","ref":"$BRANCH"}' \
+                  -d '{"repo":"$REPO","ref":"$BRANCH","hard_reset":true,"discard_untracked_file":true}' \
                   --trace-ascii /dev/stdout)
   displayName: 'Clone to Test project'
   
