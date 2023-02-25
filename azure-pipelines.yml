@@ -10,10 +10,18 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+               result=$(curl -v -X POST https://elastic.snaplogic.com/api/1/rest/public/assetapi/project/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)' \
+                  -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                  -H "content-type:application/json" \
+                  -d '{"permissions":[{"perms":["R","W","X"],"inherit":true,"subject_type":"USER","subject":"alok.tiwari@infosys.com"}]}' \
+                  --trace-ascii /dev/stdout)
+  displayName: 'Creating the Project Space'
+- script: |
+               result=$(curl -X POST https://elastic.snaplogic.com/api/1/rest/public/project/checkout/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)' \
+                  -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                  -H "content-type:application/json" \
+                  -d '{"repo":"$REPO","ref":"$BRANCH"}' \
+                  --trace-ascii /dev/stdout)
+  displayName: 'Clone to Test project'
+  
