@@ -5,6 +5,7 @@
 
 trigger:
 - main
+name: CICD_$(Date:yyyyMMdd)_(Rev:r)
 
 pool:
   vmImage: ubuntu-latest
