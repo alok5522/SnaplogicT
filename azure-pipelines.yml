@@ -34,11 +34,30 @@ jobs:
                 export result=$(curl -X GET -G 'https://elastic.snaplogic.com/api/1/rest/slsched/feed/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)'/Test%20_TriggeredTask' \
                     -u  alok.tiwari@infosys.com:Snapkapass@99 \
                     -H "content-type:application/json" \
+                    -d paramGenere=Computer \
+                    -d paramPrice=40 \
+                    -d ParamTest=Test01 \
+                    --trace-ascii /dev/stdout)
+                    echo "##vso[task.setvariable variable=RESULT]$RESULT"
+    displayName: 'Test 1'
+  - script: |
+                export result=$(curl -X GET -G 'https://elastic.snaplogic.com/api/1/rest/slsched/feed/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)'/Test%20_TriggeredTask' \
+                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -H "content-type:application/json" \
                     -d paramGenere=Horror \
                     -d paramPrice=4 \
                     -d ParamTest=Test02 \
                     --trace-ascii /dev/stdout)
                     echo "##vso[task.setvariable variable=RESULT]$RESULT"
-    displayName: 'Test1'
-
+    displayName: 'Test 2'
+  - script: |
+                export result=$(curl -X GET -G 'https://elastic.snaplogic.com/api/1/rest/slsched/feed/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)'/Test%20_TriggeredTask' \
+                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -H "content-type:application/json" \
+                    -d paramGenere=Fantasy \
+                    -d paramPrice=4 \
+                    -d ParamTest=Test03 \
+                    --trace-ascii /dev/stdout)
+                    echo "##vso[task.setvariable variable=RESULT]$RESULT"
+    displayName: 'Test 3'
     
