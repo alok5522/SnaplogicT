@@ -30,7 +30,7 @@ jobs:
                 export result=$(curl -X POST https://elastic.snaplogic.com/api/1/rest/public/project/checkout/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)' \
                     -u  alok.tiwari@infosys.com:Snapkapass@99 \
                     -H "content-type:application/json" \
-                    -d '{"repo":"alok5522/SnaplogicT","ref":"main","hard_reset":true,"discard_untracked_file":true}' \
+                    -d '{"repo":"alok5522/SnaplogicT","ref":"feature","hard_reset":true,"discard_untracked_file":true}' \
                     --trace-ascii /dev/stdout)
                     echo "##vso[task.setvariable variable=RESULT]$RESULT"
     displayName: 'Clone to Test project'
