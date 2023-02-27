@@ -555,15 +555,6 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "$author"
-                                        },
-                                        "targetPath": {
-                                            "value": "$author"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
                                             "value": "$price"
                                         },
                                         "targetPath": {
