@@ -569,15 +569,6 @@
                                         "targetPath": {
                                             "value": "$genre"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$description"
-                                        },
-                                        "targetPath": {
-                                            "value": "$description"
-                                        }
                                     }
                                 ]
                             }
