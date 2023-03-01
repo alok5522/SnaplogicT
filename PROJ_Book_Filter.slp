@@ -560,15 +560,6 @@
                                         "targetPath": {
                                             "value": "$price"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$genre"
-                                        },
-                                        "targetPath": {
-                                            "value": "$genre"
-                                        }
                                     }
                                 ]
                             }
