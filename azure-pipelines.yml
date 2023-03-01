@@ -21,7 +21,7 @@ jobs:
   steps:
   - script: |
                 export result=$(curl -v -X POST https://elastic.snaplogic.com/api/1/rest/public/assetapi/project/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)' \
-                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -u  $(USER):$(PASS) \
                     -H "content-type:application/json" \
                     -d '{"permissions":[{"perms":["R","W","X"],"inherit":true,"subject_type":"USER","subject":"alok.tiwari@infosys.com"}]}' \
                     --trace-ascii /dev/stdout)
@@ -29,7 +29,7 @@ jobs:
     displayName: 'Creating the Project Space or Project'
   - script: |
                 export result=$(curl -X POST https://elastic.snaplogic.com/api/1/rest/public/project/checkout/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)' \
-                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -u  $(USER):$(PASS) \
                     -H "content-type:application/json" \
                     -d '{"repo":"alok5522/SnaplogicT","ref":"feature","hard_reset":true,"discard_untracked_file":true}' \
                     --trace-ascii /dev/stdout)
@@ -37,7 +37,7 @@ jobs:
     displayName: 'Clone to Test project'
   - script: |
                 export result=$(curl -X GET -G 'https://elastic.snaplogic.com/api/1/rest/slsched/feed/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)'/Test%20_TriggeredTask' \
-                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -u  $(USER):$(PASS) \
                     -H "content-type:application/json" \
                     -d paramGenere=Computer \
                     -d paramPrice=40 \
@@ -47,7 +47,7 @@ jobs:
     displayName: 'Test 1'
   - script: |
                 export result=$(curl -X GET -G 'https://elastic.snaplogic.com/api/1/rest/slsched/feed/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)'/Test%20_TriggeredTask' \
-                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -u  $(USER):$(PASS) \
                     -H "content-type:application/json" \
                     -d paramGenere=Horror \
                     -d paramPrice=4 \
@@ -57,7 +57,7 @@ jobs:
     displayName: 'Test 2'
   - script: |
                 export result=$(curl -X GET -G 'https://elastic.snaplogic.com/api/1/rest/slsched/feed/Partners/Infosys/Alok_Test03'$(Build.BuildNumber)'/Test%20_TriggeredTask' \
-                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -u  $(USER):$(PASS) \
                     -H "content-type:application/json" \
                     -d paramGenere=Fantasy \
                     -d paramPrice=4 \
@@ -74,7 +74,7 @@ jobs:
   steps:
   - script: |
                 export result=$(curl -v -X POST https://elastic.snaplogic.com/api/1/rest/public/assetapi/project/Partners/Infosys/Alok_Staging'$(Build.BuildNumber)' \
-                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -u  $(USER):$(PASS) \
                     -H "content-type:application/json" \
                     -d '{"permissions":[{"perms":["R","W","X"],"inherit":true,"subject_type":"USER","subject":"alok.tiwari@infosys.com"}]}' \
                     --trace-ascii /dev/stdout)
@@ -82,7 +82,7 @@ jobs:
     displayName: 'Create the Staging Project Space'
   - script: |
                 export result=$(curl -X POST https://elastic.snaplogic.com/api/1/rest/public/project/checkout/Partners/Infosys/Alok_Staging'$(Build.BuildNumber)' \
-                    -u  alok.tiwari@infosys.com:Snapkapass@99 \
+                    -u  $(USER):$(PASS) \
                     -H "content-type:application/json" \
                     -d '{"repo":"alok5522/SnaplogicT","ref":"feature","hard_reset":true,"discard_untracked_file":true}' \
                     --trace-ascii /dev/stdout)
