@@ -12,7 +12,7 @@ name: CICD_$(Date:yyyyMMdd)_$(Rev:r)
 
 jobs:
 - job: Test
-  condition: startsWith(variables['Build.SourceBranch'], 'refs/heads/feature/')
+  condition: startsWith(variables['Build.SourceBranch'], 'refs/heads/feature')
   displayName: Build Test Project and Run Tests
   pool:
     vmImage: ubuntu-latest
