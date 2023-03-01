@@ -560,6 +560,51 @@
                                         "targetPath": {
                                             "value": "$price"
                                         }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$author"
+                                        },
+                                        "targetPath": {
+                                            "value": "$author"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$description"
+                                        },
+                                        "targetPath": {
+                                            "value": "$description"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$genre"
+                                        },
+                                        "targetPath": {
+                                            "value": "$genre"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$publish_date"
+                                        },
+                                        "targetPath": {
+                                            "value": "$publish_date"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$title"
+                                        },
+                                        "targetPath": {
+                                            "value": "$title"
+                                        }
                                     }
                                 ]
                             }
