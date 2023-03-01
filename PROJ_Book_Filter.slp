@@ -596,15 +596,6 @@
                                         "targetPath": {
                                             "value": "$publish_date"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$title"
-                                        },
-                                        "targetPath": {
-                                            "value": "$title"
-                                        }
                                     }
                                 ]
                             }
