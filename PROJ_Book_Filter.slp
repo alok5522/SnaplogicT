@@ -555,6 +555,15 @@
                                     {
                                         "expression": {
                                             "expression": true,
+                                            "value": "$price"
+                                        },
+                                        "targetPath": {
+                                            "value": "$price"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
                                             "value": "$author"
                                         },
                                         "targetPath": {
@@ -573,15 +582,6 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "$price"
-                                        },
-                                        "targetPath": {
-                                            "value": "$price"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
                                             "value": "$genre"
                                         },
                                         "targetPath": {
@@ -591,10 +591,10 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "$title"
+                                            "value": "$publish_date"
                                         },
                                         "targetPath": {
-                                            "value": "$title"
+                                            "value": "$publish_date"
                                         }
                                     }
                                 ]

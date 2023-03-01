@@ -12,7 +12,7 @@
             "paramGenere": "Computer",
             "paramPrice": "40"
         },
-        "pipeline_path": null,
+        "pipeline_path": "Test",
         "snaplex_path": "Trigger_and_scheduled_cloudplex"
     },
     "schedule": {},
