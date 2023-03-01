@@ -578,15 +578,6 @@
                                         "targetPath": {
                                             "value": "$title"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$author"
-                                        },
-                                        "targetPath": {
-                                            "value": "$author"
-                                        }
                                     }
                                 ]
                             }
