@@ -587,15 +587,6 @@
                                         "targetPath": {
                                             "value": "$genre"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$publish_date"
-                                        },
-                                        "targetPath": {
-                                            "value": "$publish_date"
-                                        }
                                     }
                                 ]
                             }
