@@ -66,6 +66,9 @@
                 "label": {
                     "value": "File Writer - output0"
                 },
+                "unlinked_action": {
+                    "value": "fail"
+                },
                 "view_type": {
                     "value": "document"
                 }
@@ -73,11 +76,84 @@
         },
         "settings": {
             "error_param_table": {
-                "value": []
+                "value": [
+                    {
+                        "key": {
+                            "value": "PipelineID"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "pipe.instanceId"
+                        }
+                    },
+                    {
+                        "key": {
+                            "value": "LABEL"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "pipe.label"
+                        }
+                    },
+                    {
+                        "key": {
+                            "value": "PipelinePath"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "pipe.projectPath"
+                        }
+                    },
+                    {
+                        "key": {
+                            "value": "RUN_ID"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "pipe.ruuid"
+                        }
+                    },
+                    {
+                        "key": {
+                            "value": "urgency"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "2"
+                        }
+                    },
+                    {
+                        "key": {
+                            "value": "impact"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "2"
+                        }
+                    },
+                    {
+                        "key": {
+                            "value": "assignment_group"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "Snaplogic Support"
+                        }
+                    },
+                    {
+                        "key": {
+                            "value": "Ticket_create"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "Yes"
+                        }
+                    }
+                ]
             },
             "error_pipeline": {
                 "expression": false,
-                "value": null
+                "value": "ErrorReporting"
             },
             "imports": {
                 "value": []
@@ -137,7 +213,7 @@
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
                 "grid_x_int": 1,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -149,7 +225,7 @@
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
                 "grid_x_int": 2,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -161,7 +237,7 @@
             "11111111-1111-1111-1111-000000000002": {
                 "error": {},
                 "grid_x_int": 3,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -173,7 +249,7 @@
             "11111111-1111-1111-1111-000000000003": {
                 "error": {},
                 "grid_x_int": 4,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -185,7 +261,7 @@
             "11111111-1111-1111-1111-000000000004": {
                 "error": {},
                 "grid_x_int": 5,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -197,7 +273,7 @@
             "11111111-1111-1111-1111-000000000005": {
                 "error": {},
                 "grid_x_int": 6,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -209,7 +285,7 @@
             "11111111-1111-1111-1111-000000000006": {
                 "error": {},
                 "grid_x_int": 7,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -569,15 +645,6 @@
                                         "targetPath": {
                                             "value": "$author"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$description"
-                                        },
-                                        "targetPath": {
-                                            "value": "$description"
-                                        }
                                     }
                                 ]
                             }
@@ -712,6 +779,9 @@
                     "output101": {
                         "label": {
                             "value": "output0"
+                        },
+                        "unlinked_action": {
+                            "value": "fail"
                         },
                         "view_type": {
                             "value": "document"
