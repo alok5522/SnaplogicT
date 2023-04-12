@@ -118,7 +118,7 @@
                             "value": "urgency"
                         },
                         "value": {
-                            "expression": true,
+                            "expression": false,
                             "value": "2"
                         }
                     },
@@ -127,7 +127,7 @@
                             "value": "impact"
                         },
                         "value": {
-                            "expression": true,
+                            "expression": false,
                             "value": "2"
                         }
                     },
@@ -137,7 +137,7 @@
                         },
                         "value": {
                             "expression": true,
-                            "value": "Snaplogic Support"
+                            "value": "\"Snaplogic Support\""
                         }
                     },
                     {
@@ -145,7 +145,7 @@
                             "value": "Ticket_create"
                         },
                         "value": {
-                            "expression": true,
+                            "expression": false,
                             "value": "Yes"
                         }
                     }
@@ -635,6 +635,15 @@
                                         },
                                         "targetPath": {
                                             "value": "$price"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$description"
+                                        },
+                                        "targetPath": {
+                                            "value": "$description"
                                         }
                                     }
                                 ]
