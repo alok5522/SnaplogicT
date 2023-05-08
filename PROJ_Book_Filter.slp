@@ -636,15 +636,6 @@
                                         "targetPath": {
                                             "value": "$price"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$description"
-                                        },
-                                        "targetPath": {
-                                            "value": "$description"
-                                        }
                                     }
                                 ]
                             }
