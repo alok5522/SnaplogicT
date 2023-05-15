@@ -645,6 +645,15 @@
                                         "targetPath": {
                                             "value": "$description"
                                         }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$author"
+                                        },
+                                        "targetPath": {
+                                            "value": "$author"
+                                        }
                                     }
                                 ]
                             }

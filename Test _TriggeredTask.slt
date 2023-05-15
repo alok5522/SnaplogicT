@@ -6,7 +6,6 @@
         "enabled": true,
         "include_external_urls": true,
         "job_type": "standard",
-        "llfeed_token": "YdMBc2gTjCZiIGjssay0RY7kwzJ5kbUe",
         "pipeline_parameters": {
             "ParamTest": "Test01",
             "paramGenere": "Computer",
