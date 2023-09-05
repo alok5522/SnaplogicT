@@ -148,6 +148,15 @@
                             "expression": false,
                             "value": "Yes"
                         }
+                    },
+                    {
+                        "key": {
+                            "value": "Sample_poc"
+                        },
+                        "value": {
+                            "expression": true,
+                            "value": "_paramGenere"
+                        }
                     }
                 ]
             },
@@ -162,7 +171,7 @@
                 "value": [
                     {
                         "capture": {
-                            "value": false
+                            "value": true
                         },
                         "data_type": {
                             "value": "string"
@@ -182,7 +191,7 @@
                     },
                     {
                         "capture": {
-                            "value": false
+                            "value": true
                         },
                         "data_type": {
                             "value": "string"
@@ -213,7 +222,7 @@
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
                 "grid_x_int": 1,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -225,7 +234,7 @@
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
                 "grid_x_int": 2,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -237,7 +246,7 @@
             "11111111-1111-1111-1111-000000000002": {
                 "error": {},
                 "grid_x_int": 3,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -249,7 +258,7 @@
             "11111111-1111-1111-1111-000000000003": {
                 "error": {},
                 "grid_x_int": 4,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -261,7 +270,7 @@
             "11111111-1111-1111-1111-000000000004": {
                 "error": {},
                 "grid_x_int": 5,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -273,7 +282,7 @@
             "11111111-1111-1111-1111-000000000005": {
                 "error": {},
                 "grid_x_int": 6,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -285,7 +294,7 @@
             "11111111-1111-1111-1111-000000000006": {
                 "error": {},
                 "grid_x_int": 7,
-                "grid_y_int": 2,
+                "grid_y_int": 1,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -645,15 +654,6 @@
                                         "targetPath": {
                                             "value": "$description"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$author"
-                                        },
-                                        "targetPath": {
-                                            "value": "$author"
-                                        }
                                     }
                                 ]
                             }
@@ -817,7 +817,7 @@
                         "value": "Validate & Execute"
                     },
                     "fileAction": {
-                        "value": "OVERWRITE"
+                        "value": "APPEND"
                     },
                     "filename": {
                         "expression": true,

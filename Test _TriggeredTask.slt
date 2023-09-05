@@ -6,12 +6,13 @@
         "enabled": true,
         "include_external_urls": true,
         "job_type": "standard",
+        "llfeed_token": "YdMBc2gTjCZiIGjssay0RY7kwzJ5kbUe",
         "pipeline_parameters": {
             "ParamTest": "Test01",
             "paramGenere": "Computer",
             "paramPrice": "40"
         },
-        "pipeline_path": "Test",
+        "pipeline_path": null,
         "snaplex_path": "Trigger_and_scheduled_cloudplex"
     },
     "schedule": {},
