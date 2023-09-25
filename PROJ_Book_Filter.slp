@@ -1,4 +1,7 @@
 {
+    "ai_map": {
+        "footprint": "H4sIAAAAAAAAA8srzckBAE/8yyUEAAAA"
+    },
     "class_id": "com-snaplogic-pipeline",
     "class_version": 9,
     "link_map": {
@@ -371,11 +374,11 @@
                     },
                     "retries": {
                         "expression": false,
-                        "value": 0
+                        "value": 5
                     },
                     "retryInterval": {
                         "expression": false,
-                        "value": 1
+                        "value": 30
                     }
                 },
                 "view_serial": 100
@@ -645,15 +648,6 @@
                                         "targetPath": {
                                             "value": "$price"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$description"
-                                        },
-                                        "targetPath": {
-                                            "value": "$description"
-                                        }
                                     }
                                 ]
                             }
@@ -814,7 +808,7 @@
                         "value": false
                     },
                     "execution_mode": {
-                        "value": "Validate & Execute"
+                        "value": "Execute only"
                     },
                     "fileAction": {
                         "value": "APPEND"
