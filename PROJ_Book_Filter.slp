@@ -639,15 +639,6 @@
                                         "targetPath": {
                                             "value": "$['@id']"
                                         }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$price"
-                                        },
-                                        "targetPath": {
-                                            "value": "$price"
-                                        }
                                     }
                                 ]
                             }
