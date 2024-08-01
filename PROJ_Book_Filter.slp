@@ -639,6 +639,26 @@
                                         "targetPath": {
                                             "value": "$['@id']"
                                         }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$author"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$author"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$description"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$description"
+                                        }
                                     }
                                 ]
                             }
