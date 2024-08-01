@@ -643,10 +643,21 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "$price"
+                                            "value": "$author"
                                         },
                                         "targetPath": {
-                                            "value": "$price"
+                                            "expression": true,
+                                            "value": "$author"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": true,
+                                            "value": "$description"
+                                        },
+                                        "targetPath": {
+                                            "expression": true,
+                                            "value": "$description"
                                         }
                                     }
                                 ]
